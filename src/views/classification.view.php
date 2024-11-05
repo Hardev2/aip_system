@@ -173,7 +173,7 @@
                     <div class="form-row">
                         <div class="form-col">
                             <label for="psw"><b>Department/Office</b></label>
-                            <input type="number" placeholder="Phone number" name="psw" required><br>
+                            <input type="text" placeholder="Enter department/office" name="psw" required><br>
                         </div>
                     </div>
                     <div class="form-row">
