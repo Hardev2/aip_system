@@ -3,12 +3,17 @@
             <div class="aip-header">
                 <h1>CY 2025 Annual Investment Program (AIP) <br>By Program/Project/Activity by Sector</h1>
             </div>
-            <div class="side-header">
-                <p>Province/City/Municipality/Barangay: CEBU CITY</p>
-                <div class="check-box">
-                    <input type="checkbox">
-                    <p>No climate Change Expenditure (Please tick the box if your LGU does not have any climate change expenditure.)</p>
+            <div class="second_header_container">
+                <div class="side-header">
+                    <p>Province/City/Municipality/Barangay: CEBU CITY</p>
+                    <div class="check-box">
+                        <input type="checkbox">
+                        <p>No climate Change Expenditure (Please tick the box if your LGU does not have any climate change expenditure.)</p>
+                    </div>
                 </div>
+                <div class="add-btn aip-add-btn">
+                 <button onclick="document.getElementById('id01').style.display='block'"><i class="fa-solid fa-plus"></i>Add new</button>
+               </div>
             </div>
             <div class="aip-table">
                 <table>
@@ -29,7 +34,7 @@
                             <th></th>
                             <th></th>
                             <th></th>
-                            <th>Staring <br>Date</th>
+                            <th>Starting <br>Date</th>
                             <th>Completion <br>Date</th>
                             <th></th>
                             <th></th>
@@ -220,4 +225,104 @@
             </div>
         </div>
     </div>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="" method="post">
+                    <div class="form-col">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"><i class="fa-solid fa-x"></i></button>
+                    </div>
+                <div class="form-container">
+                    <div class="form-container-header">
+                    <h1>Contact Information</h1>
+                    <p>We'll never share this information with anyone</p>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="aip-code"><b>AIP REF CODE</b></label>
+                            <input type="text" placeholder="AIP CODE" name="aip-code" value="1000-000-2-1-01" disabled>
+                        </div>
+                       
+                    </div>
+                    <h4 class="form_sub_header">AIP Information</h4>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="psw"><b>Program/Project/Activity Description</b></label>
+                            <input type="text" placeholder="Enter project/activity" name="" required><br>
+                        </div>
+                        <div class="form-col">
+                            <label for="psw"><b>Implementing Office Department</b></label>
+                            <input type="text" placeholder="Enter office department" name="" required><br>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="psw"><b>Expected Outputs</b></label>
+                            <input type="text" placeholder="Enter outputs" name="" required><br>
+                        </div>
+                        <div class="form-col">
+                            <label for="psw"><b>Funding Source</b></label>
+                            <input type="text" placeholder="Enter funding source" name="" required><br>
+                        </div>
+                    </div>
+                    <h4 class="form_sub_header">Schedule of Implementation</h4>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">Staring Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="">Completion Date</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <h4 class="form_sub_header">Amount</h4>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">Personal Services</label>
+                            <input type="number" placeholder="Enter personal services" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="">Maintenance and Other Operating expenses</label>
+                            <input type="number" placeholder="Enter other expenses" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="">Capital Outlay</label>
+                            <input type="number" placeholder="Enter capital outlay" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">Total</label>
+                            <input type="number" placeholder="Enter total" required>
+                        </div>
+                    </div>
+                    <h4 class="form_sub_header">Amount of Climate Change Expenditures</h4>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">Climate Change Adaptation</label>
+                            <input type="number" placeholder="Enter climate change adaptation" required>
+                        </div>
+                        <div class="form-col">
+                            <label for="">Climate Change Mitigation</label>
+                            <input type="number" placeholder="Enter climage change mitigation" >
+                        </div>
+                      
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="">CC Typology Code</label>
+                            <input type="number" placeholder="Enter CC typology code">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                        <button type="submit">Submit</button>
+                        </div>
+                    </div>
+
+                   
+                </div>
+        </form>
 </div>
+</div>
+<script src="public/js/modal.js"></script>
+

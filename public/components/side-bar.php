@@ -12,7 +12,7 @@
             <i class="fa-solid fa-users"></i>
             <a href="router.php?page=classification">Classification</a>
         </li>
-        <li class="nav-link has-dropdown">
+        <!-- <li class="nav-link has-dropdown">
             <i class="fa-solid fa-diagram-project"></i>
             <a href="#" aria-disabled="true" readonly>Page 3</a>
             <span class="dropdown-arrow"></span>
@@ -55,8 +55,12 @@
                 <li><i class="fa-solid fa-list"></i><a href="">Sub Page 6</a></li>
                
             </ul>
-        </li>
+        </li> -->
+        <div class="logout_container">
+            <button type="button"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+        </div>
     </ul>
+  
 </nav>
 
 

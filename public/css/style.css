@@ -159,6 +159,28 @@ body::-webkit-scrollbar{
     color: yellow;
 }
 
+.logout_container{
+    display: flex;
+    align-items: end;
+    height: 50vh;
+}
+
+.logout_container button i{
+    transform: rotate(180deg);
+    margin-right: 5px;
+}
+.logout_container button{
+    font-size: .9rem;
+    background-color: var(--primary);
+    border: none;
+    color: white;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  
+}
+/*MAIN CONTAINER*/
+
 .container .main{
     position: relative;
     left: 190px;
@@ -311,6 +333,11 @@ body::-webkit-scrollbar{
    position: relative;
    right: 11px;
 
+}
+
+.aip-add-btn{
+    position: relative;
+    left: 25px;
 }
  .add-btn button{
     background-color: var(--header-color);
@@ -660,8 +687,13 @@ tbody tr:last-child td:last-child {
 
   .modal .form-container .form-row .form-col{
     width: 100%;
+    padding: 5px 10px;
   }
   
+  .form-container .form-row .form-col label{
+    font-size: .9rem;
+    color: var(--grey-color);
+  }
   .form-container .form-row .form-col input,
   .form-container .form-row .form-col select{
     width: 100%;
@@ -689,6 +721,13 @@ tbody tr:last-child td:last-child {
   .form-row .form-col button[type="submit"]{
     background-color: var(--header-color);
     
+  }
+   .form_sub_header{
+    width: 100%;
+    text-align: left;
+    margin-left: 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
   }
 
  .form-col button[type="button"]{
@@ -777,6 +816,12 @@ tbody tr:last-child td:last-child {
     margin-top: 10px;
 
     color: var(--grey-color);
+}
+
+.second_header_container{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
 }
 .side-header{
     margin-top: 50px;
